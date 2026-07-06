@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBalance | Wellness Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>MindBalance</h1>
+        <p>Your daily wellness companion</p>
+    </div>
+    <button id="themeBtn">🌙 Dark Mode</button>
+</header>
+
+<main class="container">
+
+    <!-- Mood Section -->
+    <section class="card">
+        <h2>How are you feeling today?</h2>
+
+        <div class="emoji-container">
+
+            <button class="emoji" data-mood="Amazing">😁</button>
+            <button class="emoji" data-mood="Happy">😊</button>
+            <button class="emoji" data-mood="Okay">😐</button>
+            <button class="emoji" data-mood="Sad">😔</button>
+            <button class="emoji" data-mood="Stressed">😫</button>
+
+        </div>
+
+        <p id="selectedMood">Choose your mood.</p>
+
+    </section>
+
+
+    <!-- Journal -->
+    <section class="card">
+
+        <h2>Daily Journal</h2>
+
+        <textarea
+                id="journal"
+                placeholder="Write something about your day...">
+        </textarea>
+
+        <button id="saveJournal">
+            Save Journal
+        </button>
+
+    </section>
+
+
+    <!-- Habits -->
+    <section class="card">
+
+        <h2>Healthy Habits</h2>
+
+        <div class="habit">
+
+            <label>
+                <input type="checkbox" class="habit-check">
+                Drank enough water 💧
+            </label>
+
+        </div>
+
+        <div class="habit">
+
+            <label>
+                <input type="checkbox" class="habit-check">
+                Slept at least 8 hours 😴
+            </label>
+
+        </div>
+
+        <div class="habit">
+
+            <label>
+                <input type="checkbox" class="habit-check">
+                Exercised today 🏃
+            </label>
+
+        </div>
+
+        <div class="habit">
+
+            <label>
+                <input type="checkbox" class="habit-check">
+                Ate healthy meals 🥗
+            </label>
+
+        </div>
+
+        <div class="habit">
+
+            <label>
+                <input type="checkbox" class="habit-check">
+                Reduced screen time 📵
+            </label>
+
+        </div>
+
+        <h3>Today's Progress</h3>
+
+        <div class="progress-bar">
+
+            <div id="progressFill"></div>
+
+        </div>
+
+        <p id="progressText">0%</p>
+
+    </section>
+
+
+    <!-- Wellness Tip -->
+    <section class="card">
+
+        <h2>Today's Wellness Tip</h2>
+
+        <div id="tipBox">
+
+            Select your mood to receive a personalized wellness tip.
+
+        </div>
+
+    </section>
+    <section class="card">
+
+        <h2>Water Tracker</h2>
+
+        <p id="waterCount">0 / 8 glasses</p>
+
+        <button id="addWater">Drink Water</button>
+
+    </section>
+
+    <section class="card">
+        <h2>Quote of the Day</h2>
+        <p id="quote"></p>
+    </section>
+
+    <section class="card">
+
+    <h2>Your Statistics</h2>
+
+    <p id="stats"></p>
+
+    </section>
+
+
+    <!-- Statistics -->
+    <section class="card">
+
+        <h2>Weekly Mood Overview</h2>
+
+        <canvas id="moodChart"></canvas>
+
+    </section>
+
+    <section class="card">
+    <h2>Need Help?</h2>
+
+    <p>If you're feeling overwhelmed, remember that it's okay to ask for help.</p>
+
+    <ul>
+        <li>💙 Talk to a trusted friend.</li>
+        <li>👨‍👩‍👧 Talk to your parents.</li>
+        <li>🏫 Speak with a teacher or school counselor.</li>
+        <li>🌿 Take breaks and practice self-care.</li>
+    </ul>
+    </section>
+    
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        Inspired by the HBSC (Health Behaviour in School-aged Children) Study.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
