@@ -2,6 +2,20 @@
 
 MindBalance is a web application inspired by the HBSC (Health Behaviour in School-aged Children) study.
 
+## Screenshots 
+
+### Mood Tracker
+
+![Mood Tracker](screenshots/mood.png)
+
+### Daily Journal
+
+![Daily Journal](screenshots/daily-journal.png)
+
+### Healthy Habits
+
+![Healthy Habits](screenshots/healthy-habits.png)
+
 ## Features
 
 - Mood Tracker
@@ -21,6 +35,11 @@ MindBalance is a web application inspired by the HBSC (Health Behaviour in Schoo
 - JavaScript
 - Chart.js
 - LocalStorage
+
+## Getting Started
+
+1. Clone this repository.
+2. Open `index.html` in your broswer.
 
 ## Purpose
 
