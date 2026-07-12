@@ -6,7 +6,7 @@ MindBalance is a web application inspired by the HBSC (Health Behaviour in Schoo
 
 ### Mood Tracker
 
-![Mood Tracker](screenshots/mood.png)
+![Mood Tracker](screenshots/mood-tracker.png)
 
 ### Daily Journal
 
